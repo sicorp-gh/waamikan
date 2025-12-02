@@ -19,7 +19,7 @@ function MainContent() {
         </Paragraph>
       </div>
 
-      <div className="row container-fluid border-danger p-0 w-100 text-center my-5">
+      <div className="row container-fluid border-danger p-0 w-100 mx-auto text-center my-5">
         <div className="col-md-4">
           <TextCard>
             <HeadingText text="SERVICES 1" color="white" size="6" />
@@ -46,7 +46,7 @@ function MainContent() {
         </div>
       </div>
 
-      <div className="row">
+      <div className="row w-100 mx-auto gap-5">
         <div className="col-md-4">
           <Sidebar />
         </div>

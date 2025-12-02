@@ -13,8 +13,15 @@ function Sidebar() {
             aria-label="Search Products"
             aria-describedby="basic-addon1"
           />
+
+          {/* InputGroup.Text with no padding */}
           <InputGroup.Text id="basic-addon1" className="p-0 overflow-hidden">
-            <Button variant="primary rounded-0 bg-white border-0 text-dark">
+            {/* Use variant="" (or 'light'/'link') and put classes in className */}
+            <Button
+              type="button"
+              variant="" /* don't misuse variant prop */
+              className="rounded-0 bg-white border-0 text-dark shadow-none p-2 btn-no-shadow"
+            >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="20"
