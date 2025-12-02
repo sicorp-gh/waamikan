@@ -1,6 +1,4 @@
-import React from "react";
-
-export const MainContent = () => {
+function MainContent() {
   return (
     <div className="row w-75 mx-auto">
       <div className="col">Column</div>
@@ -8,6 +6,6 @@ export const MainContent = () => {
       <div className="col">Column</div>
     </div>
   );
-};
+}
 
 export default MainContent;

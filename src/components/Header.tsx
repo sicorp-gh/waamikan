@@ -1,8 +1,6 @@
-import React from "react";
-
-export const Header = () => {
+function Header() {
   return (
-    <div className="p-2 primary-bg header">
+    <div className="p-2 primary-bg mini-font">
       <div className="row w-75 mx-auto">
         <div className="col-6 d-flex">
           <div className="d-flex">
@@ -44,6 +42,6 @@ export const Header = () => {
       </div>
     </div>
   );
-};
+}
 
 export default Header;
