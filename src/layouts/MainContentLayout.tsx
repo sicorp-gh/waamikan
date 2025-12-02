@@ -4,6 +4,7 @@ import Container from "../components/Container";
 import TextCard from "../components/TextCard";
 import GridRow from "../components/GridRow";
 import GridCol from "../components/GridCol";
+import { Button } from "@/components/ui/button";
 
 function MainContentLayout() {
   return (
@@ -27,43 +28,40 @@ function MainContentLayout() {
 
         <GridRow cols="3" gap="3" className="my-5">
           <GridCol size="1">
-            <TextCard>
+            <TextCard className="text-center">
               <HeadingText color="white" size="lg" align="center">
                 Service 1
               </HeadingText>
               <p className="text-white text-center my-4">
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                Eligendi nihil aliquam unde itaque laboriosam, soluta animi
-                velit ratione sapiente reiciendis quod. Earum, saepe neque natus
-                architecto ex laudantium sequi nemo!
+                Eligendi nihil aliquam unde itaque laboriosam, soluta animi.
               </p>
+              <Button variant="outline">Lean More</Button>
             </TextCard>
           </GridCol>
           <GridCol size="1">
-            <TextCard>
+            <TextCard className="text-center">
               <HeadingText color="white" size="lg" align="center">
                 Service 1
               </HeadingText>
               <p className="text-white text-center my-4">
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                Eligendi nihil aliquam unde itaque laboriosam, soluta animi
-                velit ratione sapiente reiciendis quod. Earum, saepe neque natus
-                architecto ex laudantium sequi nemo!
+                Eligendi nihil aliquam unde itaque laboriosam, soluta animi.
               </p>
+              <Button variant="outline">Lean More</Button>
             </TextCard>
           </GridCol>
 
           <GridCol size="1">
-            <TextCard>
+            <TextCard className="text-center">
               <HeadingText color="white" size="lg" align="center">
                 Service 1
               </HeadingText>
               <p className="text-white text-center my-4">
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                Eligendi nihil aliquam unde itaque laboriosam, soluta animi
-                velit ratione sapiente reiciendis quod. Earum, saepe neque natus
-                architecto ex laudantium sequi nemo!
+                Eligendi nihil aliquam unde itaque laboriosam, soluta animi.
               </p>
+              <Button variant="outline">Lean More</Button>
             </TextCard>
           </GridCol>
         </GridRow>

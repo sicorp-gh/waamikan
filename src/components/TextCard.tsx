@@ -10,7 +10,7 @@ function TextCard({ children, className }: Props) {
     <div
       className={`bg-red-500 p-1 transition hover:scale-[1.05] ${className}`}
     >
-      <div className="w-full rounded p-2 border-1 border-white">{children}</div>
+      <div className="w-full rounded p-3 border-1 border-white">{children}</div>
     </div>
   );
 }
