@@ -1,11 +1,11 @@
-import Header from "../components/Header";
+import Callout from "../components/Callout";
 import MainContent from "../components/MainContent";
 import NavLayout from "./NavLayout";
 
 function MainLayout() {
   return (
     <div className="container-fluid px-0">
-      <Header />
+      <Callout />
       <NavLayout />
       <MainContent />
     </div>

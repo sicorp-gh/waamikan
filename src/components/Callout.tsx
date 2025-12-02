@@ -1,9 +1,12 @@
-function Header() {
+import AppName from "./AppName";
+
+function Callout() {
   return (
     <div className="p-2 primary-bg mini-font">
-      <div className="row w-75 mx-auto">
-        <div className="col-6 d-flex">
-          <div className="d-flex">
+      <div className="row w-75 mx-auto align-items-center">
+        {/* Contact Info */}
+        <div className="col-12 col-md-6 d-flex flex-column flex-md-row gap-2 gap-md-3 align-items-start align-items-md-center mb-2 mb-md-0">
+          <div className="d-flex align-items-center">
             <span className="me-2">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -20,7 +23,7 @@ function Header() {
             <span>+233 54 538 0595</span>
           </div>
 
-          <div className="ms-3 d-flex">
+          <div className="d-flex align-items-center">
             <span className="me-2">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -38,10 +41,14 @@ function Header() {
             <span>wilfredwubonto@yahoo.com</span>
           </div>
         </div>
-        <div className="col-6 text-end">WAAMIKAN MEDICAL SUPPLIES</div>
+
+        {/* Company Name */}
+        <div className="col-12 col-md-6 text-center text-md-end">
+          <AppName />
+        </div>
       </div>
     </div>
   );
 }
 
-export default Header;
+export default Callout;
