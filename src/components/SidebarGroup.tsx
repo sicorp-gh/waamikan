@@ -1,5 +1,4 @@
 import type { ReactNode } from "react";
-import Paragraph from "./Paragraph";
 
 interface Props {
   title: string;
