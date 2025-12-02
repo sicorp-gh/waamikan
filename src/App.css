@@ -6,6 +6,19 @@
 .small-text{
     font-size: 0.7rem;;
 }
-.nav-container{
+.light-bg{
     background-color:aliceblue;
+}
+
+.light-gray-bg{
+    background-color:rgb(204, 204, 204)
+}
+
+.text-card {
+  transition: transform 0.3s;
+  cursor: pointer;
+}
+
+.text-card:hover {
+  transform: scale(1.05);
 }

@@ -4,10 +4,10 @@ import NavLinks from "../components/NavLinks";
 
 function NavLayout() {
   return (
-    <div className="container-fluid px-0 py-3 nav-container">
-      <div className="row w-75 mx-auto">
-        <div className="col-md-6">
-          <Logo />
+    <div className="container-fluid w-100 px-0 py-3 light-bg">
+      <div className="row container w-100 w-md-75 mx-auto">
+        <div className="text-center text-md-start col-md-6">
+          <Logo size="w-50" />
         </div>
         <div className="col-md-6">
           <AccountOptions />

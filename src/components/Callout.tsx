@@ -3,7 +3,7 @@ import AppName from "./AppName";
 function Callout() {
   return (
     <div className="p-2 primary-bg mini-font">
-      <div className="row w-75 mx-auto align-items-center">
+      <div className="row w-md-75  mx-auto align-items-center">
         {/* Contact Info */}
         <div className="col-12 col-md-6 d-flex flex-column flex-md-row gap-2 gap-md-3 align-items-start align-items-md-center mb-2 mb-md-0">
           <div className="d-flex align-items-center">
