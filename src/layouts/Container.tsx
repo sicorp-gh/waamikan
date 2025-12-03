@@ -1,12 +1,26 @@
 import type { ReactNode } from "react";
 
 interface Props {
+  bgImage?: string;
   children?: ReactNode;
   className?: string;
 }
-function Container({ children, className }: Props) {
+
+function Container({ bgImage, children, className = "" }: Props) {
   return (
-    <div className={`w-full sm:w-[70%] mx-auto p-2 ${className}`}>
+    <div
+      style={
+        bgImage
+          ? {
+              backgroundImage: `url(${bgImage})`,
+              backgroundSize: "contain",
+              backgroundRepeat: "no-repeat",
+              backgroundPosition: "center",
+            }
+          : undefined
+      }
+      className={`w-full sm:w-[70%] mx-auto p-2 ${className}`}
+    >
       {children}
     </div>
   );

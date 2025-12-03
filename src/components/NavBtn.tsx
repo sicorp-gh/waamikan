@@ -10,9 +10,7 @@ function NavBtn({ onBtnClick, className }: Props) {
   return (
     <>
       <label className={`swap swap-rotate sm:hidden ${className}`}>
-        {/* this hidden checkbox controls the state */}
         <input type="checkbox" onChange={() => onBtnClick()} />
-
         <RxHamburgerMenu className="swap-off size-7" />
         <IoClose className="swap-on size-7" />
       </label>
