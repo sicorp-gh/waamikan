@@ -25,9 +25,9 @@ function MainContentLayout() {
           laudantium sequi nemo!
         </p>
 
-        <GridRow cols="3" gap="3" className="my-5">
-          <GridCol size="1">
-            <TextCard className="text-center">
+        <GridRow cols="3" gap="5" className="my-5">
+          <GridCol size="1" className="bg-red-500">
+            <TextCard className="text-center bg-transparent">
               <HeadingText color="white" size="lg" align="center">
                 Service 1
               </HeadingText>
@@ -35,11 +35,11 @@ function MainContentLayout() {
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit.
                 Eligendi nihil aliquam unde itaque laboriosam, soluta animi.
               </p>
-              <Button size="xs">Learn More</Button>
+              <Button>Learn More</Button>
             </TextCard>
           </GridCol>
-          <GridCol size="1">
-            <TextCard className="text-center">
+          <GridCol size="1" className="bg-red-500">
+            <TextCard className="text-center bg-transparent">
               <HeadingText color="white" size="lg" align="center">
                 Service 1
               </HeadingText>
@@ -47,12 +47,12 @@ function MainContentLayout() {
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit.
                 Eligendi nihil aliquam unde itaque laboriosam, soluta animi.
               </p>
-              <Button size="xs">Learn More</Button>
+              <Button>Learn More</Button>
             </TextCard>
           </GridCol>
 
-          <GridCol size="1">
-            <TextCard className="text-center">
+          <GridCol size="1" className="bg-red-500">
+            <TextCard className="text-center bg-transparent">
               <HeadingText color="white" size="lg" align="center">
                 Service 1
               </HeadingText>
@@ -60,7 +60,7 @@ function MainContentLayout() {
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit.
                 Eligendi nihil aliquam unde itaque laboriosam, soluta animi.
               </p>
-              <Button size="xs">Learn More</Button>
+              <Button>Learn More</Button>
             </TextCard>
           </GridCol>
         </GridRow>

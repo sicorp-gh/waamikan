@@ -4,16 +4,17 @@ interface Props {
   color?: string;
   className?: string;
   children?: ReactNode;
-  size?: string;
+  size?: "xs" | "sm" | "md" | "lg" | string;
 }
+
 function Button({
   color = "neutral",
-  children = "Button",
   className,
-  size = "",
+  children = "Button",
+  size = "sm",
 }: Props) {
   return (
-    <button className={`btn btn-${color} btn-${size} ${className}`}>
+    <button className={`btn btn-${size} btn-${color}  ${className}`}>
       {children}
     </button>
   );
