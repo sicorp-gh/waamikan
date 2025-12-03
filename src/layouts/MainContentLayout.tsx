@@ -4,8 +4,7 @@ import Container from "../components/Container";
 import TextCard from "../components/TextCard";
 import GridRow from "../components/GridRow";
 import GridCol from "../components/GridCol";
-import { Button } from "@/components/ui/button";
-
+import Button from "../components/Button";
 function MainContentLayout() {
   return (
     <div className="w-full">
@@ -36,7 +35,7 @@ function MainContentLayout() {
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit.
                 Eligendi nihil aliquam unde itaque laboriosam, soluta animi.
               </p>
-              <Button variant="outline">Lean More</Button>
+              <Button size="xs">Learn More</Button>
             </TextCard>
           </GridCol>
           <GridCol size="1">
@@ -48,7 +47,7 @@ function MainContentLayout() {
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit.
                 Eligendi nihil aliquam unde itaque laboriosam, soluta animi.
               </p>
-              <Button variant="outline">Lean More</Button>
+              <Button size="xs">Learn More</Button>
             </TextCard>
           </GridCol>
 
@@ -61,7 +60,7 @@ function MainContentLayout() {
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit.
                 Eligendi nihil aliquam unde itaque laboriosam, soluta animi.
               </p>
-              <Button variant="outline">Lean More</Button>
+              <Button size="xs">Learn More</Button>
             </TextCard>
           </GridCol>
         </GridRow>
