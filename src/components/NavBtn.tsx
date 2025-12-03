@@ -3,12 +3,13 @@ import { IoClose } from "react-icons/io5";
 
 interface Props {
   onBtnClick: () => void;
+  className: string;
 }
 
-function NavBtn({ onBtnClick }: Props) {
+function NavBtn({ onBtnClick, className }: Props) {
   return (
     <>
-      <label className="swap swap-rotate sm:hidden">
+      <label className={`swap swap-rotate sm:hidden ${className}`}>
         {/* this hidden checkbox controls the state */}
         <input type="checkbox" onChange={() => onBtnClick()} />
 

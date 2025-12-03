@@ -1,5 +1,5 @@
 import AppName from "./AppName";
-import Container from "../components/Container";
+import Container from "../layouts/Container";
 import ContactPhone from "./ContactPhone";
 import ContactEmail from "./ContactEmail";
 

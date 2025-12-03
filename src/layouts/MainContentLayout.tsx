@@ -1,9 +1,9 @@
 import HeadingText from "../components/HeadingText";
 import AppName from "../components/AppName";
-import Container from "../components/Container";
+import Container from "./Container";
 import TextCard from "../components/TextCard";
-import GridRow from "../components/GridRow";
-import GridCol from "../components/GridCol";
+import GridRow from "./GridRow";
+import GridCol from "./GridCol";
 import Button from "../components/Button";
 function MainContentLayout() {
   return (
@@ -25,8 +25,8 @@ function MainContentLayout() {
           laudantium sequi nemo!
         </p>
 
-        <GridRow cols="3" gap="5" className="my-5">
-          <GridCol size="1" className="bg-red-500">
+        <GridRow cols={3} gap={5} className="my-5">
+          <GridCol size={1} className="bg-gray-700">
             <TextCard className="text-center bg-transparent">
               <HeadingText color="white" size="lg" align="center">
                 Service 1
@@ -38,7 +38,7 @@ function MainContentLayout() {
               <Button>Learn More</Button>
             </TextCard>
           </GridCol>
-          <GridCol size="1" className="bg-red-500">
+          <GridCol size={1} className="bg-gray-700">
             <TextCard className="text-center bg-transparent">
               <HeadingText color="white" size="lg" align="center">
                 Service 1
@@ -51,7 +51,7 @@ function MainContentLayout() {
             </TextCard>
           </GridCol>
 
-          <GridCol size="1" className="bg-red-500">
+          <GridCol size={1} className="bg-gray-700">
             <TextCard className="text-center bg-transparent">
               <HeadingText color="white" size="lg" align="center">
                 Service 1

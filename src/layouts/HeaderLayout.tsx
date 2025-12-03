@@ -1,7 +1,6 @@
 import Logo from "@/components/Logo";
-import Nav from "../components/Nav";
 import Menu from "../components/Menu";
-import Container from "../components/Container";
+import Container from "./Container";
 
 function HeaderLayout() {
   let MenuItems = ["Welcome Guest", "Logout", "Account", "0.00"];
@@ -16,7 +15,6 @@ function HeaderLayout() {
             items={MenuItems}
             className="divide-x-1 divide-gray-300 w-full hidden sm:flex justify-end"
           />
-          <Nav />
         </div>
       </Container>
     </div>
