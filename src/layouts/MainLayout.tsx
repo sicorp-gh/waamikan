@@ -5,15 +5,14 @@ import Nav from "../components/Nav";
 import Container from "./Container";
 import { FaShoppingCart } from "react-icons/fa";
 import { IoSearch } from "react-icons/io5";
-import BannerImage from "../assets/ad.jpg";
-import Button from "../components/Button";
+import Banner from "../components/Banner";
 function MainLayout() {
   return (
     <div className="w-full">
       <div>
         <Callout />
         <HeaderLayout />
-        <Container>
+        <Container className="my-5">
           <div className="grid grid-cols-3 gap-5">
             <div className="col-span-2">
               <Nav className="flex justify-end sm:justify-start" />
@@ -25,14 +24,7 @@ function MainLayout() {
             </div>
           </div>
         </Container>
-
-        <Container
-          bgImage={BannerImage}
-          className="min-h-[30vh] flex items-center p-3 bg-red-600"
-        >
-          <Button className="bg-red-400">Shop Now</Button>
-        </Container>
-
+        <Banner />
         <MainContentLayout />
       </div>
     </div>

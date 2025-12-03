@@ -1,11 +1,11 @@
 import Logo from "@/components/Logo";
-import Menu from "../components/Menu";
+import Menu from "../components/NavMenu";
 import Container from "./Container";
 
 function HeaderLayout() {
   let MenuItems = ["Welcome Guest", "Logout", "Account", "0.00"];
   return (
-    <div className="w-full bg-gray-100 p-2 sticky top-0 sm:flex items-center">
+    <div className="sm:z-110  w-full bg-gray-100 p-2 sticky top-0 sm:flex items-center">
       <Container className="grid grid-cols-4">
         <div className="col-span-1">
           <Logo />
