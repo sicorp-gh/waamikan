@@ -33,9 +33,15 @@ function NavbarLayout() {
         </div>
       </div>
 
-      <AnimatePresence>
+      <AnimatePresence initial={false} mode="wait">
         {isModalOpen && (
-          <Modal handleClose={closeModal} title="Search Products" />
+          <Modal handleClose={closeModal} title="Search Products">
+            <input
+              type="text"
+              placeholder="Search..."
+              className="border p-2 w-full rounded"
+            />
+          </Modal>
         )}
       </AnimatePresence>
     </Container>

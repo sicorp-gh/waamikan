@@ -8,7 +8,7 @@ function Banner() {
       bgImage={BannerImage}
       className="min-h-[40vh] rounded-0 shadow-0 sm:rounded sm:shadow-md flex items-center justify-center bg-blue-200"
     >
-      <Button className="btn btn-secondary top-21 relative">Shop Now</Button>
+      <Button className="btn btn-secondary top-23 relative">Shop Now</Button>
     </Container>
   );
 }

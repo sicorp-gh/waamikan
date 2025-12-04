@@ -4,7 +4,6 @@ import HeaderLayout from "./HeaderLayout";
 import NavbarLayout from "./NavbarLayout";
 import Banner from "../components/Banner";
 import MainContentLayout from "./MainContentLayout";
-import MobileMenu from "../components/MobileMenu";
 import { motion } from "framer-motion";
 
 function MainLayout() {
@@ -21,7 +20,6 @@ function MainLayout() {
         <NavbarLayout />
         <Banner />
         <MainContentLayout />
-        <MobileMenu />
         <FooterLayout />
       </motion.div>
     </>

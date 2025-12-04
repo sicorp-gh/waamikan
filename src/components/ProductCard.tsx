@@ -21,7 +21,7 @@ const ProductCard: React.FC<Props> = ({
   const [quantity, setQuantity] = useState(1);
 
   const increment = () => setQuantity((q) => q + 1);
-  const decrement = () => setQuantity((q) => Math.max(1, q));
+  const decrement = () => setQuantity((q) => Math.max(1, q - 1));
 
   return (
     <div

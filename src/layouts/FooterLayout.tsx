@@ -178,7 +178,7 @@ export default function Footer() {
       </div>
 
       <div className="text-center text-sm text-gray-500 mt-8">
-        © {new Date().getFullYear()} Your <AppName />. All rights reserved.
+        © {new Date().getFullYear()} <AppName />. All rights reserved.
       </div>
     </footer>
   );
