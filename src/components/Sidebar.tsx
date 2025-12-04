@@ -1,4 +1,6 @@
-import Search from "../components/Search";
+import { CiSearch } from "react-icons/ci";
+import SectionContainer from "./SectionContainer";
+import TextBox from "./TextBox";
 import LinkGroup from "../components/LinkGroup";
 
 function Sidebar() {
@@ -22,7 +24,11 @@ function Sidebar() {
 
   return (
     <div className="w-full space-y-5 text-sm">
-      <Search />
+      <SectionContainer title="Search Products">
+        <TextBox type="search">
+          <CiSearch />
+        </TextBox>
+      </SectionContainer>
       <LinkGroup
         className="hidden sm:block"
         title="FILTER BY PROCUCT CATEGORY"

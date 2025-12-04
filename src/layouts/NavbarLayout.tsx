@@ -1,9 +1,11 @@
 import { AnimatePresence, motion } from "framer-motion";
 import Container from "./Container";
+import { CiSearch } from "react-icons/ci";
 import { FaShoppingCart } from "react-icons/fa";
 import { IoSearch } from "react-icons/io5";
 import Nav from "../components/Nav";
 import Modal from "../components/Modal";
+import TextBox from "../components/TextBox";
 
 import { useState } from "react";
 
@@ -36,11 +38,9 @@ function NavbarLayout() {
       <AnimatePresence initial={false} mode="wait">
         {isModalOpen && (
           <Modal handleClose={closeModal} title="Search Products">
-            <input
-              type="text"
-              placeholder="Search..."
-              className="border p-2 w-full rounded"
-            />
+            <TextBox type="search">
+              <CiSearch />
+            </TextBox>
           </Modal>
         )}
       </AnimatePresence>
