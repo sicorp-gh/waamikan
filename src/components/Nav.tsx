@@ -26,7 +26,7 @@ function Nav({ className }: Props) {
     <div className={className}>
       <NavMenu isOpen={isMenuOpen} items={MenuItems} />
       <NavBtn
-        className="fixed sm:relative top-5 right-2"
+        className="fixed sm:relative top-3 right-2"
         onBtnClick={handleClick}
       />
     </div>

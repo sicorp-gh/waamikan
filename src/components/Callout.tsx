@@ -5,7 +5,7 @@ import ContactEmail from "./ContactEmail";
 
 function Callout() {
   return (
-    <div className="w-full hidden sm:flex items-center p-2 bg-blue-400">
+    <div className="sm:z-110 w-full hidden sm:flex items-center p-2 bg-blue-400 sticky top-0">
       <Container className="text-white text-sm font-bold">
         <div className="flex items-center justify-between">
           <div className="space-x-3 flex items-center">

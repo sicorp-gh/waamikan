@@ -13,13 +13,13 @@ function Container({ bgImage, children, className = "" }: Props) {
         bgImage
           ? {
               backgroundImage: `url(${bgImage})`,
-              backgroundSize: "contain",
+              backgroundSize: "cover",
               backgroundRepeat: "no-repeat",
               backgroundPosition: "center",
             }
           : undefined
       }
-      className={`w-full sm:w-[70%] mx-auto p-2 ${className}`}
+      className={`w-full sm:w-[70%] mx-auto sm:p-2 ${className}`}
     >
       {children}
     </div>

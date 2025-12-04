@@ -1,33 +1,29 @@
+import React from "react";
 import Callout from "../components/Callout";
 import HeaderLayout from "./HeaderLayout";
-import MainContentLayout from "./MainContentLayout";
-import Nav from "../components/Nav";
-import Container from "./Container";
-import { FaShoppingCart } from "react-icons/fa";
-import { IoSearch } from "react-icons/io5";
+import NavbarLayout from "./NavbarLayout";
 import Banner from "../components/Banner";
+import MainContentLayout from "./MainContentLayout";
+import MobileMenu from "../components/MobileMenu";
+import { motion } from "framer-motion";
+
 function MainLayout() {
   return (
-    <div className="w-full">
-      <div>
+    <>
+      <motion.div
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ duration: 1 }}
+        className="w-full"
+      >
         <Callout />
         <HeaderLayout />
-        <Container className="my-5">
-          <div className="grid grid-cols-3 gap-5">
-            <div className="col-span-2">
-              <Nav className="flex justify-end sm:justify-start" />
-            </div>
-
-            <div className="col-span-1 flex items-center justify-end space-x-3">
-              <IoSearch className="cursor-pointer" />
-              <FaShoppingCart className="cursor-pointer" />
-            </div>
-          </div>
-        </Container>
+        <NavbarLayout />
         <Banner />
         <MainContentLayout />
-      </div>
-    </div>
+        <MobileMenu />
+      </motion.div>
+    </>
   );
 }
 
