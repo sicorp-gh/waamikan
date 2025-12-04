@@ -11,7 +11,7 @@ function NavBtn({ onBtnClick, className }: Props) {
   return (
     <>
       <label
-        className={`swap swap-rotate text-white sm:text-gray-700 sm:hidden ${className}`}
+        className={`z-50 swap swap-rotate text-white sm:text-gray-700 sm:hidden ${className}`}
       >
         <input type="checkbox" onChange={() => onBtnClick()} />
         <RxHamburgerMenu className="swap-off size-7" />

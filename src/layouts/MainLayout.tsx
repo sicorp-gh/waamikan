@@ -1,5 +1,5 @@
-import React from "react";
 import Callout from "../components/Callout";
+import FooterLayout from "./FooterLayout";
 import HeaderLayout from "./HeaderLayout";
 import NavbarLayout from "./NavbarLayout";
 import Banner from "../components/Banner";
@@ -22,6 +22,7 @@ function MainLayout() {
         <Banner />
         <MainContentLayout />
         <MobileMenu />
+        <FooterLayout />
       </motion.div>
     </>
   );

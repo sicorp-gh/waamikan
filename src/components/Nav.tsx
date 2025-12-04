@@ -14,14 +14,7 @@ function Nav({ className }: Props) {
     console.log(isMenuOpen);
   };
 
-  let MenuItems = [
-    "HOME",
-    "PRODUCTS",
-    "BRANDS",
-    "SRVICES",
-    "ACCOUNT",
-    "CONTACT",
-  ];
+  let MenuItems = ["HOME", "PRODUCTS", "SRVICES", "ACCOUNT", "CONTACT"];
   return (
     <div className={className}>
       <NavMenu isOpen={isMenuOpen} items={MenuItems} />
