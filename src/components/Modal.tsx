@@ -43,7 +43,7 @@ function Modal({
     <Backdrop onClick={handleClose}>
       <motion.div
         onClick={(e) => e.stopPropagation()}
-        className="w-[90%] sm:w-full mx-auto rounded-lg shadow-mg overflow-hidden bg-white"
+        className="w-[98%] sm:w-full mx-auto rounded-lg shadow-mg overflow-hidden bg-white"
         variants={dropIn}
         initial="hidden"
         animate="visible"

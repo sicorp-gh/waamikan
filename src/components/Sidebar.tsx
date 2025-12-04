@@ -24,7 +24,7 @@ function Sidebar() {
 
   return (
     <div className="w-full space-y-5 text-sm">
-      <SectionContainer title="Search Products">
+      <SectionContainer title="Search Products" className="hidden sm:block">
         <TextBox type="search">
           <CiSearch />
         </TextBox>

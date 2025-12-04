@@ -21,7 +21,7 @@ function NavbarLayout() {
           <Nav className="flex justify-end sm:justify-start" />
         </div>
 
-        <div className="col-span-1 hidden sm:flex items-center justify-end space-x-3">
+        <div className="col-span-1 text-[1.5rem] text-white sm:text-gray-700 fixed sm:top-0 top-[14px] sm:right-0 right-14 z-50 sm:relative flex items-center justify-end space-x-3">
           <motion.button
             whileHover={{ scale: 2.0 }}
             whileTap={{ scale: 0.9 }}
