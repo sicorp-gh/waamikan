@@ -1,3 +1,4 @@
+import Button from "./Button";
 import React, { useState } from "react";
 import { FaShoppingCart, FaInfoCircle } from "react-icons/fa";
 
@@ -31,12 +32,13 @@ const ProductCard: React.FC<Props> = ({
       <div className="relative">
         <img src={image} alt={title} className="w-full object-cover" />
         {/* Add to Cart button on image */}
-        <button
+
+        <Button
           onClick={() => onAddToCart && onAddToCart(quantity)}
           className="absolute top-3 right-3 bg-green-500 hover:bg-green-600 text-white p-2 rounded-full shadow-lg transition"
         >
           <FaShoppingCart />
-        </button>
+        </Button>
       </div>
 
       {/* Card content */}
@@ -50,35 +52,38 @@ const ProductCard: React.FC<Props> = ({
 
         {/* Quantity selector */}
         <div className="flex items-center gap-2">
-          <button
+          <Button
+            className="bg-gray-200 btn-xs text-[1.04rem] text-gray-700 rounded hover:bg-gray-300 transition"
             onClick={decrement}
-            className="bg-gray-200 text-gray-700 px-2 rounded hover:bg-gray-300 transition"
           >
             -
-          </button>
+          </Button>
           <span className="px-2">{quantity}</span>
-          <button
+
+          <Button
+            className="bg-gray-200 btn-xs text-[1.04rem] text-gray-700 rounded hover:bg-gray-300 transition"
             onClick={increment}
-            className="bg-gray-200 text-gray-700 px-2 rounded hover:bg-gray-300 transition"
           >
             +
-          </button>
+          </Button>
         </div>
 
         {/* Action buttons */}
         <div className="flex gap-2 mt-2">
-          <button
+          <Button
+            className="flex-1 bg-blue-500  text-xs hover:bg-blue-600 text-white rounded transition"
             onClick={() => onAddToCart && onAddToCart(quantity)}
-            className="flex-1 bg-blue-500 hover:bg-blue-600 text-white py-2 rounded transition"
+            size="lg"
           >
             Add to Cart
-          </button>
-          <button
+          </Button>
+          <Button
+            className="flex-1 bg-gray-200 text-sm hover:bg-gray-300 text-gray-800 py-2 rounded transition flex items-center justify-center gap-1"
             onClick={onViewDetails}
-            className="flex-1 bg-gray-200 hover:bg-gray-300 text-gray-800 py-2 rounded transition flex items-center justify-center gap-1"
+            size="lg"
           >
             <FaInfoCircle /> Details
-          </button>
+          </Button>
         </div>
       </div>
     </div>
