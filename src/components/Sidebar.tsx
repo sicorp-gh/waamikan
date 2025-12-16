@@ -1,26 +1,32 @@
+import axios from "axios";
 import { CiSearch } from "react-icons/ci";
+import LinkGroup from "../components/LinkGroup";
+import { useEffect, useState } from "react";
 import SectionContainer from "./SectionContainer";
 import TextBox from "./TextBox";
-import LinkGroup from "../components/LinkGroup";
 
 function Sidebar() {
-  let categories = [
-    "Surgical Instruments",
-    "Diagnostic Equipment",
-    "Personal Protective Equipment (PPE)",
-    "Wound Care & Dressings",
-    "Respiratory Supplies",
-    "IV & Infusion Supplies",
-    "Hospital Furniture",
-    "Laboratory Equipment",
-    "Pharmaceuticals",
-    "Rehabilitation & Mobility Aids",
-    "Emergency & First Aid",
-    "Sterilization & Disinfection",
-    "Monitoring Devices",
-    "Dental Supplies",
-    "Maternity & Neonatal Supplies",
-  ];
+
+  interface Category {
+    id: number;
+    name: string;
+  }
+
+  const [categories, setCategories] = useState<Category[]>([]);
+  const [loading, setLoading] = useState<boolean>(true);
+
+  useEffect(() => {
+    axios.get("https://waamikan-api.onrender.com/category/")
+      .then(response => {
+        setCategories(response.data);
+      })
+      .catch(error => {
+        console.error("Error fetching categories:", error);
+      })
+      .finally(() => {
+        setLoading(false);
+      });
+  }, []);
 
   return (
     <div className="w-full space-y-5 text-sm">
@@ -29,11 +35,18 @@ function Sidebar() {
           <CiSearch />
         </TextBox>
       </SectionContainer>
-      <LinkGroup
-        className="hidden sm:block"
-        title="FILTER BY PROCUCT CATEGORY"
-        items={categories}
-      />
+
+      {loading ? (
+        <p className="hidden sm:block text-gray-500">Loading categories...</p>
+      ) : categories.length === 0 ? (
+        <p className="hidden sm:block text-gray-500">No categories available</p>
+      ) : (
+        <LinkGroup
+          className="hidden sm:block"
+          title="FILTER BY PRODUCT CATEGORY"
+          items={categories.map(cat => cat.name)}
+        />
+      )}
     </div>
   );
 }

@@ -30,7 +30,7 @@ const ProductCard: React.FC<Props> = ({
     >
       {/* Image */}
       <div className="relative">
-        <img src={image} alt={title} className="w-full object-cover" />
+        <img src={image} alt={image} className="m-2 w-full object-cover" />
         {/* Add to Cart button on image */}
 
         <Button
