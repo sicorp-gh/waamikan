@@ -15,6 +15,7 @@ interface Product {
   image_path: string | null;
 }
 
+
 function MainContentLayout() {
   const [products, setProducts] = useState<Product[]>([]);
   const [loading, setLoading] = useState<boolean>(true);
